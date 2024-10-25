@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bedroom Cupboard Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f2f2f2; /* Light gray */
+            background-image: url('https://www.transparenttextures.com/patterns/marble.png'); /* Subtle marble texture */
+            background-size: cover;
+            background-attachment: fixed; /* Fixed background */
+            padding: 20px;
+        }
+
+        h2 {
+            margin-bottom: 40px;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .image-container {
+            position: relative;
+            margin-bottom: 30px;
+            overflow: hidden;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 1px solid #ddd;
+            text-align: center;
+            cursor: pointer;
+            width:355px;
+
+        }
+
+        .image-container:hover {
+            transform: scale(1.05) translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .image-container img {
+            width: 100%;  /* Image will take full width */
+            height: 255px; /* Fixed height */
+            display: block;
+            margin: 0 auto;
+            object-fit: cover; /* Maintain aspect ratio and cover */
+        }
+
+        .image-details {
+            position: absolute; /* Position it below the image */
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(248, 248, 248, 0.7); /* Slightly transparent background */
+            color: #333;
+            padding: 10px;
+            font-size: 0.85rem; /* Smaller text */
+            border-top: 1px solid #ddd;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s ease; /* Smooth transition for opacity */
+        }
+
+        .image-container:hover .image-details {
+            opacity: 1; /* Show details on hover */
+        }
+
+        /* Modal Styles */
+        .modal-content {
+            border-radius: 12px;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent modal */
+            transition: transform 0.3s ease;
+        }
+
+        .modal-backdrop {
+            opacity: 0.7; /* Lower opacity for backdrop */
+            background-color: #000; /* Dark backdrop */
+        }
+
+        .img-medium {
+            max-width: 80%; /* Adjust max width as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin: 0 auto; /* Center the image */
+            display: block; /* Make sure it's displayed as a block element */
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #7952b3;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .footer a {
+            color: #f8f9fa;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 767.98px) {
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+ 
+
+    <div class="container">
+        <h2 class="text-center mt-4">Tv Unit Cupboard Gallery</h2>
+        <div class="row">
+            <!-- Bedroom cupboard images -->
+            <!-- Image 1 -->
+            <div class="col-md-4">
+                <div class="image-container" data-toggle="modal" data-target="#cupboardModal1">
+                    <img src="https://i.pinimg.com/474x/6b/0f/c3/6b0fc30911f897328c8edf45da881098.jpg" alt="cupboard1">
+                    <div class="image-details">
+                        <h5>Modern Wooden Cupboard</h5>
+                        <p>A stylish wooden cupboard that complements modern decor.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for Cupboard 1 -->
+            <div class="modal fade" id="cupboardModal1" tabindex="-1" role="dialog" aria-labelledby="cupboardModalLabel1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="cupboardModalLabel1">Modern Wooden Cupboard</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://i.pinimg.com/474x/6b/0f/c3/6b0fc30911f897328c8edf45da881098.jpg" alt="Cupboard 1" class="img-medium">
+                            <p>A stylish wooden cupboard that complements modern decor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image 2 -->
+            <div class="col-md-4">
+                <div class="image-container" data-toggle="modal" data-target="#cupboardModal2">
+                    <img src="https://i.pinimg.com/474x/0d/b3/cd/0db3cd45e2c5125de9806ee142b7092c.jpg" alt="cupboard2">
+                    <div class="image-details">
+                        <h5>Sleek White Cupboard</h5>
+                        <p>Minimalist design with ample storage space.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for Cupboard 2 -->
+            <div class="modal fade" id="cupboardModal2" tabindex="-1" role="dialog" aria-labelledby="cupboardModalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="cupboardModalLabel2">Sleek White Cupboard</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://i.pinimg.com/474x/0d/b3/cd/0db3cd45e2c5125de9806ee142b7092c.jpg" alt="Cupboard 2" class="img-medium">
+                            <p>Minimalist design with ample storage space.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image 3 -->
+            <div class="col-md-4">
+                <div class="image-container" data-toggle="modal" data-target="#cupboardModal3">
+                    <img src="https://i.pinimg.com/474x/f2/ee/71/f2ee711dc2dcd0aa286bafe5d90da617.jpg" alt="">
+                    <div class="image-details">
+                        <h5>Classic Oak Cupboard</h5>
+                        <p>Elegantly crafted oak cupboard.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for Cupboard 3 -->
+            <div class="modal fade" id="cupboardModal3" tabindex="-1" role="dialog" aria-labelledby="cupboardModalLabel3" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="cupboardModalLabel3">Classic Oak Cupboard</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://i.pinimg.com/474x/f2/ee/71/f2ee711dc2dcd0aa286bafe5d90da617.jpg" alt="Cupboard 3" class="img-medium">
+                            <p>Elegantly crafted oak cupboard.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image 4 -->
+            <div class="col-md-4">
+                <div class="image-container" data-toggle="modal" data-target="#cupboardModal4">
+                    <img src="https://i.pinimg.com/474x/a7/25/19/a725194822c2acc3f5d4ec280d91d1e3.jpg" alt="Cupboard 4">
+                    <div class="image-details">
+                        <h5>Contemporary Glass Cupboard</h5>
+                        <p>A modern cupboard with glass doors.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for Cupboard 4 -->
+            <div class="modal fade" id="cupboardModal4" tabindex="-1" role="dialog" aria-labelledby="cupboardModalLabel4" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="cupboardModalLabel4">Contemporary Glass Cupboard</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://i.pinimg.com/474x/a7/25/19/a725194822c2acc3f5d4ec280d91d1e3.jpg" alt="Cupboard 4" class="img-medium">
+                            <p>A modern cupboard with glass doors.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image 5 -->
+            <div class="col-md-4">
+                <div class="image-container" data-toggle="modal" data-target="#cupboardModal5">
+                    <img src="https://i.pinimg.com/736x/4d/06/15/4d06156242d21910d008d742f13f3487.jpg" alt="Cupboard 5">
+                    <div class="image-details">
+                        <h5>Rustic Farmhouse Cupboard</h5>
+                        <p>A charming cupboard perfect for rustic decor.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for Cupboard 5 -->
+            <div class="modal fade" id="cupboardModal5" tabindex="-1" role="dialog" aria-labelledby="cupboardModalLabel5" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="cupboardModalLabel5">Rustic Farmhouse Cupboard</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://i.pinimg.com/736x/4d/06/15/4d06156242d21910d008d742f13f3487.jpg" alt="Cupboard 5" class="img-medium">
+                            <p>A charming cupboard perfect for rustic decor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image 6 -->
+            <div class="col-md-4">
+                <div class="image-container" data-toggle="modal" data-target="#cupboardModal6">
+                    <img src="https://i.pinimg.com/474x/6a/b0/bd/6ab0bdebf3564488c580ba9b1edd20d5.jpg" alt="Cupboard 6">
+                    <div class="image-details">
+                        <h5>Industrial Metal Cupboard</h5>
+                        <p>Sturdy cupboard with a modern industrial look.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for Cupboard 6 -->
+            <div class="modal fade" id="cupboardModal6" tabindex="-1" role="dialog" aria-labelledby="cupboardModalLabel6" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="cupboardModalLabel6">Industrial Metal Cupboard</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://i.pinimg.com/474x/6a/b0/bd/6ab0bdebf3564488c580ba9b1edd20d5.jpg" alt="Cupboard 6" class="img-medium">
+                            <p>Sturdy cupboard with a modern industrial look.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image 7 -->
+            <div class="col-md-4">
+                <div class="image-container" data-toggle="modal" data-target="#cupboardModal7">
+                    <img src="https://i.pinimg.com/474x/67/c2/d3/67c2d3c12631368b23d9dd89742ee71e.jpg" alt="Cupboard 7">
+                    <div class="image-details">
+                        <h5>Elegant Black Cupboard</h5>
+                        <p>A sleek cupboard for a modern home.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for Cupboard 7 -->
+            <div class="modal fade" id="cupboardModal7" tabindex="-1" role="dialog" aria-labelledby="cupboardModalLabel7" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="cupboardModalLabel7">Elegant Black Cupboard</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://i.pinimg.com/474x/67/c2/d3/67c2d3c12631368b23d9dd89742ee71e.jpg" alt="Cupboard 7" class="img-medium">
+                            <p>A sleek cupboard for a modern home.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image 8 -->
+            <div class="col-md-4">
+                <div class="image-container" data-toggle="modal" data-target="#cupboardModal8">
+                    <img src="https://i.pinimg.com/474x/91/87/fd/9187fdf649aed5d45b1623032a1e1a40.jpg" alt="Cupboard 8">
+                    <div class="image-details">
+                        <h5>Artisan Crafted Cupboard</h5>
+                        <p>Handcrafted cupboard with unique details.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for Cupboard 8 -->
+            <div class="modal fade" id="cupboardModal8" tabindex="-1" role="dialog" aria-labelledby="cupboardModalLabel8" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="cupboardModalLabel8">Artisan Crafted Cupboard</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://i.pinimg.com/474x/91/87/fd/9187fdf649aed5d45b1623032a1e1a40.jpg" alt="Cupboard 8" class="img-medium">
+                            <p>Handcrafted cupboard with unique details.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image 9 -->
+            <div class="col-md-4">
+                <div class="image-container" data-toggle="modal" data-target="#cupboardModal9">
+                    <img src="https://i.pinimg.com/736x/cc/9f/9e/cc9f9e086f7852bd24a4970298676412.jpg" alt="Cupboard 9">
+                    <div class="image-details">
+                        <h5>Vintage Cupboard</h5>
+                        <p>A timeless piece for classic interiors.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for Cupboard 9 -->
+            <div class="modal fade" id="cupboardModal9" tabindex="-1" role="dialog" aria-labelledby="cupboardModalLabel9" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="cupboardModalLabel9">Vintage Cupboard</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://i.pinimg.com/736x/cc/9f/9e/cc9f9e086f7852bd24a4970298676412.jpg" alt="Cupboard 9" class="img-medium">
+                            <p>A timeless piece for classic interiors.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image 10 -->
+            <div class="col-md-4">
+                <div class="image-container" data-toggle="modal" data-target="#cupboardModal10">
+                    <img src="https://i.pinimg.com/474x/1e/96/8e/1e968e6ffc07ecea5792bc495165154d.jpg" alt="Cupboard 10">
+                    <div class="image-details">
+                        <h5>Luxury White Cupboard</h5>
+                        <p>Spacious cupboard with a luxury finish.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for Cupboard 10 -->
+            <div class="modal fade" id="cupboardModal10" tabindex="-1" role="dialog" aria-labelledby="cupboardModalLabel10" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="cupboardModalLabel10">Luxury White Cupboard</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://i.pinimg.com/474x/1e/96/8e/1e968e6ffc07ecea5792bc495165154d.jpg" alt="Cupboard 10" class="img-medium">
+                            <p>Spacious cupboard with a luxury finish.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image 11 -->
+            <div class="col-md-4">
+                <div class="image-container" data-toggle="modal" data-target="#cupboardModal11">
+                    <img src="https://i.pinimg.com/474x/71/0f/70/710f7072a57d2c46a994838aa45b480f.jpg" alt="Cupboard 11">
+                    <div class="image-details">
+                        <h5>Children's Playful Cupboard</h5>
+                        <p>Colorful cupboard designed for kids.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for Cupboard 11 -->
+            <div class="modal fade" id="cupboardModal11" tabindex="-1" role="dialog" aria-labelledby="cupboardModalLabel11" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="cupboardModalLabel11">Children's Playful Cupboard</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://i.pinimg.com/474x/71/0f/70/710f7072a57d2c46a994838aa45b480f.jpg" alt="Cupboard 11" class="img-medium">
+                            <p>Colorful cupboard designed for kids.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image 12 -->
+            <div class="col-md-4">
+                <div class="image-container" data-toggle="modal" data-target="#cupboardModal12">
+                    <img src="https://i.pinimg.com/736x/e0/ce/13/e0ce13843915a38e9b792af2a0e60523.jpg" alt="Cupboard 12">
+                    <div class="image-details">
+                        <h5>Minimalist Compact Cupboard</h5>
+                        <p>Space-saving cupboard for small rooms.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for Cupboard 12 -->
+            <div class="modal fade" id="cupboardModal12" tabindex="-1" role="dialog" aria-labelledby="cupboardModalLabel12" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="cupboardModalLabel12">Minimalist Compact Cupboard</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://i.pinimg.com/736x/e0/ce/13/e0ce13843915a38e9b792af2a0e60523.jpg" alt="Cupboard 12" class="img-medium">
+                            <p>Space-saving cupboard for small rooms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+                    <p>Office Address: 123 Main St, City, Country</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>Branches</h5>
+                    <ul class="list-unstyled">
+                        <li>Branch 1: 456 Another St, City, Country</li>
+                        <li>Branch 2: 789 Different Rd, City, Country</li>
+                        <li>Branch 3: 101 Some Ave, City, Country</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <h5>About Us</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2024 SV Interiors. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
